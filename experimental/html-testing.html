@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hey! It seems you've reached the *!*source code*!*. I've left some comments explaining what some tags, attributes do! -->
+<head>
+    <meta charset="UTF-8">
+    <title>Danny's Portfolio</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="./imgs/dq.png">
+
+    <style>
+        * {
+            text-align: center;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+
+
+<body class="stack">
+    <nav id="topNav">
+        <!-- rel tag noopener noreferrer prevents malicious attacks from pages I link to. This includes "tabnabbing"-->
+        <li class="Resume"><a href="./files/fall_2022_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li class="About Me"><a href="#About-Me">About Me</a></li>
+        <li class="Projects"><a href="#Projects">Projects</a></li>
+        <li class="Goals"><a href="#Goals">Goals</a></li>
+        <li class="Contact Me"><a href="#Contact-Me">Contact Me</a></li>
+    </nav>
+
+
+    <h1 id="hi">Hi! I'm <iframe id="signature" src="./files/dq-signature.pdf" width="390rem" frameBorder="300"></iframe>!</h1>
+
+    <details>
+        <summary>How do I navigate this page?</summary>
+        <ol>
+            <li class="Resume"><a href="./files/fall_2022_resume.pdf" target="_blank" rel="noopener noreferrer">Resume:</a> Direct, hot link to my resume.</li>
+            <li class="About Me"><a href="#About-Me">About Me:</a> My hobbies, and hopefully an expression of myself.</li>
+            <li class="Projects"><a href="#Projects">Projects:</a> A quick, short demonstration of my personal projects outside of class, and select, notable class projects.</li>
+            <li class="Goals"><a href="#Goals">Goals:</a> A personal statement of my current goals, and a <a href="./files/Danny_Cover_Letter.pdf" target="_blank" rel="noopener noreferrr">cover letter</a>.</li>
+            <li class="Contact Me"><a href="#Contact-Me">Contact Me:</a> Quick links to contact me.</li>
+            <li class="Experimental"><a href="./experimental">Experimental:</a> Other pages to try out code or projects I'm working on!</li>
+        </ol>
+    </details>
+    
+
+
+
+    <section id="About-Me">
+        <h2>About Me</h2>
+        <img src="../imgs/flower.jpg" alt="A picture of me!" width="300"></img>
+        <h3><em>Welcome</em> to my page! I'm currently a third year Computer Science student.</h3>
+
+        <p>
+            I enjoy playing piano, trumpet, waterpolo, swimming, and more! 
+            Please click through the table to see more.
+        </p>
+
+    
+
+        <table>
+            <caption>Winter 2023 Schedule</caption>
+            
+            <tr>
+                <th>Time (by hour)</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday">ANTH 102</td>
+                <td id="Wednesday"></td>
+                <td id="Thursday">ANTH 102</td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>            
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday">ANTH 102</td>
+                <td id="Wednesday"></td>
+                <td id="Thursday">ANTH 102</td>
+                <td id="Friday">CSE 120 Discussion</td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>5:00 PM</td>
+                <td id="Monday">CSE 134B</td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday">CSE 134B</td>
+                <td id="Thursday"></td>
+                <td id="Friday">CSE 134B</td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>6:00 PM</td>
+                <td id="Monday">CSE 134B overlaps with CSE 120 from 6:30PM</td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>7:00 PM</td>
+                <td id="Monday">CSE 120</td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>8:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>9:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>10:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+            <tr>
+                <td>11:00 PM</td>
+                <td id="Monday"></td>
+                <td id="Tuesday"></td>
+                <td id="Wednesday"></td>
+                <td id="Thursday"></td>
+                <td id="Friday"></td>
+                <td id="Saturday"></td>
+                <td id="Sunday"></td>
+            </tr>
+         
+        </table>
+    </section>
+
+
+
+    <section id="Projects">
+        <h2>Projects</h2>
+
+
+    </section>
+
+
+
+    <section id="Goals">
+        <h2>Goals</h2>
+
+
+    </section>
+
+
+
+    <section id="Contact-Me">
+        <h2>Contact Me</h2>
+
+
+    </section>
+
+
+
+
+    <br><br><br>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="myname">Enter your name:</label>
+        <!-- name for form submission data, id for css and javascript -->
+        <input type="text" name="myname" id="myname" required>
+        <!-- </label> -->
+
+        <br>
+
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" required>
+
+
+        <input type="submit" value="send">
+    </form>
+</body>
+
+
+
+<div id="secret-video">                
+    <script>
+        function showContent() {
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+
+    <button onclick="showContent()">Thank you for visiting!</button>
+
+    <template>
+        <img src="../media/seal.jpeg" width="800em">
+    </template>
+</div>
+
+
+
+</html>

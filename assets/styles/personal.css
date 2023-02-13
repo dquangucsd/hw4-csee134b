@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+    font-family: san 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+
+}
+
+
+
+table, tr, th, td {
+    font-size: small;
+    border: 1px solid black;
+}

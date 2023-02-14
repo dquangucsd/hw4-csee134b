@@ -13,7 +13,91 @@
     
 </head>
 
+<form action="https://httpbin.org/get" method="get">
+    <label for="myname">Enter your name:</label>
+    <!-- name for form submission data, id for css and javascript -->
+    <input type="text" name="myname" id="myname" required>
+    <!-- </label> -->
 
+    <br>
+
+    <label for="pass">Password:</label>
+    <input type="password" name="pass" id="pass" required>
+
+
+    <input type="submit" value="send">
+</form>
+
+
+
+</body>
+
+<footer id="foot">
+How was the site? You can provide feedback below:
+<form>
+    <fieldset>
+        <legend>Feedback form:</legend>
+
+        <label>Title:</label>
+        <input list="honorifics" name="honorific" id="honorific">
+        <datalist id="honorifics">
+            <option value="Master"></option>
+            <option value="Queen"></option>
+            <option value="Yung Jah"></option>
+        </datalist>
+
+        <label>Name:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="text">
+        <br><br>
+
+        <label>Data of Birth:</label>
+        <input type="date">
+        <br><br>
+
+        <label for="rating">Rating:</label>
+        <select name="ratings" id="ratings">
+            <optgroup label="Out of 5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </optgroup>
+            <optgroup label="Words">
+                <option value="bad">Bad</option>
+                <option value="alright">Alright</option>
+                <option value="good">Good</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label>Feedback:</label>
+        <textarea id="additional-feedback" rows="4" cols="60">
+            Additional Feedback
+        </textarea>
+        <input type="submit" value="Submit">
+        <br><br>
+
+    </fieldset>
+
+</form>
+
+<details>
+    <summary><b>High School</b></summary>
+    <ul>
+        <li class="Senior-Citizens">President of Volunteers for Senior Citizens Club: Responsible for coordinating events, recruiting new members, and dividing work between executive board members (e.g. Treasurer, Vice Preesident, Secretary)</li>
+
+        <li class="About Me"><a href="#About-Me">About Me:</a> My hobbies, and hopefully an expression of myself.</li>
+        <li class="Projects"><a href="#Projects">Projects:</a> A quick, short demonstration of my personal projects outside of class, and select, notable class projects.</li>
+        <li class="Goals"><a href="#Goals">Goals:</a> A personal statement of my current goals, and a <a href="./files/Danny_Cover_Letter.pdf" target="_blank" rel="noopener noreferrr">cover letter</a>.</li>
+        <li class="Contact Me"><a href="#Contact-Me">Contact Me:</a> Quick links to contact me.</li>
+        <li class="Experimental"><a href="./experimental">Experimental:</a> Other pages to try out code or projects I'm working on!</li>
+    </ol>
+</details>
 
 <body>
     <table id="schedule">

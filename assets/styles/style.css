@@ -1,67 +1,38 @@
+:root {
+    --default-color: rgb(57, 65, 120);
+    --default-background: rgb(251, 249, 249);
+}
+
+
 * {
     text-align: center;
     -border: 3px solid black;
     -box-sizing: content-box;
-    font-family: san 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -font-family: san 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+
     font-size: medium;
-    margin: none;
-    padding: none;
-    
-}
-
-body {
-    -background-image: url('../../files/signature/dq-signature.png');
-    background-color: rgb(251, 249, 249);
-}
-
-
-header, section, form, footer {
-    background-color: white;
-}
-
-
-section {
-    margin: none;
-}
-
-
-#Education {
-    color:rgb(57, 65, 120);
-}
-
-#header-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-#header-links img {
-    height: 3em;
-}
-
-
-#header-links img:hover {
-    transform: scale(1.3);
-    transition: transform 0.2s;
-}
-
-
-header.img {
-    width: 30%;
 }
 
 
 h1, h2 {
     font-size: 3em;
     text-align: center;
-    color:rgb(57, 65, 120);
+    color: var(--default-color);
 }
 
 
 body {
+    -background-image: url('../../files/signature/dq-signature.png');
+    background-color: var(--default-background);
+    margin: 0;
+    padding: 0;
 }
 
+
+header, section, form, footer {
+    background-color: white;
+}
 
 #topNav {
     display: flex;
@@ -104,41 +75,99 @@ body {
 #opening {
     text-align: center;
     display: grid;
-    justify-content: center;
-
-    height: 100%;
+    justify-content: center;    
 }
 
 
-#opening img {
+#opening tbody, tr, td {
     padding: 0;
     margin: 0;
+    border-spacing: 0;
 }
 
 
 #opening #signature, #flower {
     max-width: 50vw;
-    max-height: 100vh;
 }
 
 
+#header-links, #contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    
+    
+}
 
-
-#Links {
-    display: grid;
-    grid-template-columns: (3,33%);
+#header-links img, #contact-links img {
+    height: 3em;
 }
 
 
-#Links img:hover {
+#header-links img:hover, #contact-links img:hover {
     transform: scale(1.3);
     transition: transform 0.2s;
 }
 
 
+header.img {
+    width: 30%;
+}
+
+table img {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+}
+
+
+
+
+#Education img, #Education video, #About-Me img, #About-Me video {
+    height: 40vh;
+}
+
+
+.education-gallery, .about-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: scroll;
+  }
+  
+  .education-fig, .about-fig {
+    padding: .5rem;
+    background-color: #636363;
+    color: #d9d9d9;
+  }
+
+
+  /* @media screen and (min-width: 800px) {
+    .education-gallery {
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 60vh;
+    }
+  
+    .education-fig {
+      scroll-snap-align: start;
+    }
+  } */
+
+
 #Contact-Me {
     color: rgb(233, 232, 232);
-    background-color: black;
 }
 
 

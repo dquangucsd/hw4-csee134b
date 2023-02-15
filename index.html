@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <title>Danny Quang's Portfolio &copy;</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/png" href="./media/dq.png">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="./assets/styles/small-screen.css">
+
     
 </head>
 
 
 <body class="stack">
     <nav id="topNav">
+        <picture id="hamburger"> <img src="./files/hamburger.png" alt="Tabs" /> </picture>
         <!-- rel tag noopener noreferrer prevents malicious attacks from pages I link to. This includes "tabnabbing"-->
-        <a href="./files/fall_2022_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        <a href="#Education">Education</a>
-        <a href="#Projects">Project
-        <a href="#Goals">Goals</a>
+        <a href="./files/fall_2022_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#About-Me">About Me</a>
+        <a href="#Projects">Projects</a>
         <a href="#Contact-Me">Contact Me</a>
     </nav>
 
@@ -28,55 +30,162 @@
 
     <header>
         <table id="opening">
-            <tr>
-                <td>
-                    <img id="flower" src="./assets/media/flower.jpeg" alt="A picture of me!"></img>
-                </td>
+            <tbody>
+                <tr>
+                    <td>
+                        <img id="flower" src="./assets/media/flower.jpeg" alt="A picture of me!">
+                    </td>
 
-                
-                <td>
-                    <img id="signature" alt="DANNY Signature" src="./files/signature/dq-signature.png"></img>
-                    <nav id="header-links">
-                        <a id="github-link" href="https://github.com/dquangucsd" target="_blank" rel="noopener noreferrer">
-                            <img id="github-opening" alt="github-logo" src="./files/github-mark/github-mark.svg">
-                        </a>
-                        <a id="linkedin-link" href="https://www.linkedin.com/in/danny-quang-009b82194/" target="_blank" rel="noopener noreferrer">
-                            <img id="linkedin-opening" alt="linkedin-logo" src="./files/LinkedIn-Logos/LI-In-Bug.png">
-                        </a>
-                        <a id="cce-link" href="https://centerforcommunityenergy.org/danny_quang/" target="_blank" rel="noopener noreferrer">
-                            <img id="cce-opening" alt="cce-logo" src="./files/CCE-LOGO.png">
-                        </a>
-        
-                    </nav>
-                </td>
-            </tr>
+                    
+                    <td>
+                        <img id="signature" alt="DANNY Signature" src="./files/signature/dq-signature.png">
+                        <nav id="header-links">
+                            <a id="github-link" href="https://github.com/dquangucsd" target="_blank" rel="noopener noreferrer">
+                                <img id="github-opening" alt="github-logo" src="./files/github-mark/github-mark.svg">
+                            </a>
+                            <a id="linkedin-link" href="https://www.linkedin.com/in/danny-quang-009b82194/" target="_blank" rel="noopener noreferrer">
+                                <img id="linkedin-opening" alt="linkedin-logo" src="./files/LinkedIn-Logos/LI-In-Bug.png">
+                            </a>
+                            <a id="cce-link" href="https://centerforcommunityenergy.org/danny_quang/" target="_blank" rel="noopener noreferrer">
+                                <img id="cce-opening" alt="cce-logo" src="./files/CCE-LOGO.png">
+                            </a>
+            
+                        </nav>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </header>
 
 
 
+
+
+
+
+
+
     <main>
-        <section id="Education">
-            <h2>Education</h2>
-        </section>
-
-
-
-
-
-
 
         <section id="Projects">
             <h2>Projects</h2>
             <code>
                 print("Hello World")
             </code>
+
+
+            <div class="projects-gallery">
+
+
+                <figure id="galton-visualizations" class="projects-fig">
+                    <iframe src="https://dquangucsd.github.io/Visualizations-Galton-Snow-France/"></iframe>
+                    <figcaption>
+                        Plots of various data. Scroll, click, and drag!
+                    </figcaption>
+                </figure>
+
+
+
+                <figure id="flixster-video" class="projects-fig">
+                    <video controls>
+                        <source src="./assets/media/flixster-demo.mov" type="video/mp4">
+                        Your browser doesn't support video tags :(.
+                    </video>                 <figcaption>
+                        Demo of my flixster top-movies app. Press play!
+                    </figcaption>
+                </figure>
+            </div>
+            
+
+
+
         </section>
 
 
 
-        
 
+
+
+
+
+
+
+
+        <section id="About-Me">
+            <h2>About Me</h2>
+
+            <details>
+                <summary><b>High School</b></summary>
+
+                <div class="about-gallery">
+
+
+                    <figure id="waterpolo-about" class="about-fig">
+                        <img id="waterpolo-shot" src="./assets/media/waterpolo.jpg" alt="A picture of me playing waterpolo." loading="lazy"></img>
+                        <figcaption>
+                            I learned how to tread and play Waterpolo for two years.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="swimming-about" class="about-fig">
+                        <img id="swimming" src="./assets/media/swim.jpg" alt="A picture of me swimming." loading="lazy"></img>
+                        <figcaption>
+                            I swam competitively on club and high school swim teams for seven years. Here is a less-than-elegant photo of me at a swim meet.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="boyscouts-about" class="about-fig">
+                        <img id="boyscouts" src="./assets/media/scuba.jpg" alt="A picture of me scuba diving." loading="lazy"></img>
+                        <figcaption>
+                            In Boy Scouts, I attained the rank of Eagle Scout and the Triple Crown. This is Triple Crown Filler #1. Above is stinging jellyfish.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="trumpet-about" class="about-fig">
+                        <img id="trumpet" src="./assets/media/carnegie-suit.JPG" alt="A picture of me about to perform in Carnegie Hall." loading="lazy"></img>
+                        <figcaption>
+                            I have played trumpet for the All Northern California Honor Band, County Honor Band, and my school's Wind Ensemble.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="piano-about" class="about-fig">
+                        <video controls>
+                            <source src="./assets/media/rick-roll-480.mov" type="video/mp4">
+                            Your browser doesn't support video tags :( or you blocked rick rolls >:(.
+                        </video>                        
+                        <figcaption>
+                            I have played piano starting in elementary school, and taking Certificate of Merit (CM) tests starting in middle school. This is me playing with a high school friend.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="crown-filler2" class="about-fig">
+                        <img id="northern-tier" src="./assets/media/regret.JPG" alt="A picture of me carrying supplies as we walk our canoes through shallow water." loading="lazy"></img>
+                        <figcaption>
+                            Triple Crown Filler #2 - here my socks are wet.
+                        </figcaption>
+                    </figure>
+
+                    <figure id="crown-filler3" class="about-fig">
+                        <img id="" src="./assets/media/coping.jpg" alt="A picture of us scared." loading="lazy"></img>
+                        <figcaption>
+                            Triple Crown Filler #3 - here mosquitoes are finding their way through our nets.
+                        </figcaption>
+                    </figure>
+
+
+                    <figure id="mexico-about" class="about-fig">
+                        <img id="mexico-volunteer" src="./assets/media/mexico-volunteer.jpg" alt="A picture of my group, helping build homes in Mexico." loading="lazy"></img>
+                        <figcaption>
+                            Here I volunteered to help build homes in Mexico. The locals were very kind, and their food delicious.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </details>
+        </section>
+
+        
 
 
 
@@ -84,99 +193,32 @@
         <section id="Contact-Me">
             <h2>Contact Me</h2>
 
-            <h3>LinkedIn:</h3>
-            
-            <h3>Github:</h3>
-            
+            <nav id="contact-links">
+
+                <a id="linkedin-link" href="https://www.linkedin.com/in/danny-quang-009b82194/" target="_blank" rel="noopener noreferrer">
+                    <img id="linkedin-opening" alt="linkedin-logo" src="./files/LinkedIn-Logos/LI-In-Bug.png">
+                </a>
+                <a href="mailto:dquang@ucsd.edu" target="_blank" rel="noopener noreferrer">
+                    <img id="github-opening" alt="gmail-logo" src="./files/gmail-icon.svg">
+                </a>
+
+            </nav>
+ 
         </section>
     </main>
 
 
 
 
-    <form action="https://httpbin.org/get" method="get">
-        <label for="myname">Enter your name:</label>
-        <!-- name for form submission data, id for css and javascript -->
-        <input type="text" name="myname" id="myname" required>
-        <!-- </label> -->
+    
 
-        <br>
-
-        <label for="pass">Password:</label>
-        <input type="password" name="pass" id="pass" required>
-
-
-        <input type="submit" value="send">
-    </form>
-
-
-
-</body>
-
-<footer id="foot">
-    How was the site? You can provide feedback below:
-    <form>
-        <fieldset>
-            <legend>Feedback form:</legend>
-
-            <label>Title:</label>
-            <input list="honorifics" name="honorific" id="honorific">
-            <datalist id="honorifics">
-                <option value="Master"></option>
-                <option value="Queen"></option>
-                <option value="Yung Jah"></option>
-            </datalist>
-
-            <label>Name:</label>
-            <input type="text">
-            <br><br>
-
-            <label>Email:</label>
-            <input type="text">
-            <br><br>
-
-            <label>Data of Birth:</label>
-            <input type="date">
-            <br><br>
-
-            <label for="rating">Rating:</label>
-            <select name="ratings" id="ratings">
-                <optgroup label="Out of 5">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </optgroup>
-                <optgroup label="Words">
-                    <option value="bad">Bad</option>
-                    <option value="alright">Alright</option>
-                    <option value="good">Good</option>
-                </optgroup>
-            </select>
-            <br><br>
-
-            <label>Feedback:</label>
-            <textarea id="additional-feedback" rows="4" cols="60">
-                Additional Feedback
-            </textarea>
-            <input type="submit" value="Submit">
-            <br><br>
-
-        </fieldset>
-
-    </form>
-
-
-
-
+<footer>
 
     <div id="secret-seal">
         <details>
             <summary>For more:</summary>
             <ol>
-                <li class="Contact Me"><a href="mailto:dquang@ucsd.edu">Contact Me:</a> Quick links to contact me.</li>
-                <li class="Experimental"><a href="./experimental">Experimental:</a> Other pages to try out code or projects I'm working on!</li>
+                <li class="email"><a href="mailto:dquang@ucsd.edu">dquang@ucsd.edu: </a>In case the Gmail button didn't load.</li>        
             </ol>
         </details>
 

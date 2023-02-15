@@ -10,12 +10,15 @@
 
     <link rel="icon" type="image/png" href="./media/dq.png">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="./assets/styles/small-screen.css">
+
     
 </head>
 
 
 <body class="stack">
     <nav id="topNav">
+        <picture id="hamburger"> <img src="./files/hamburger.png" alt="Tabs" /> </picture>
         <!-- rel tag noopener noreferrer prevents malicious attacks from pages I link to. This includes "tabnabbing"-->
         <a href="./files/fall_2022_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="#About-Me">About Me</a>
@@ -56,6 +59,12 @@
 
 
 
+
+
+
+
+
+
     <main>
 
         <section id="Projects">
@@ -63,7 +72,43 @@
             <code>
                 print("Hello World")
             </code>
+
+
+            <div class="projects-gallery">
+
+
+                <figure id="galton-visualizations" class="projects-fig">
+                    <iframe src="https://dquangucsd.github.io/Visualizations-Galton-Snow-France/"></iframe>
+                    <figcaption>
+                        Plots of various data. Scroll, click, and drag!
+                    </figcaption>
+                </figure>
+
+
+
+                <figure id="flixster-video" class="projects-fig">
+                    <video controls>
+                        <source src="./assets/media/flixster-demo.mov" type="video/mp4">
+                        Your browser doesn't support video tags :(.
+                    </video>                 <figcaption>
+                        Demo of my flixster top-movies app. Press play!
+                    </figcaption>
+                </figure>
+            </div>
+            
+
+
+
         </section>
+
+
+
+
+
+
+
+
+
 
 
         <section id="About-Me">
@@ -76,28 +121,28 @@
 
 
                     <figure id="waterpolo-about" class="about-fig">
-                        <img id="waterpolo-shot" src="./assets/media/waterpolo.jpg" alt="A picture of me playing waterpolo."></img>
+                        <img id="waterpolo-shot" src="./assets/media/waterpolo.jpg" alt="A picture of me playing waterpolo." loading="lazy"></img>
                         <figcaption>
                             I learned how to tread and play Waterpolo for two years.
                         </figcaption>
                     </figure>
 
                     <figure id="swimming-about" class="about-fig">
-                        <img id="swimming" src="./assets/media/swim.jpg" alt="A picture of me swimming."></img>
+                        <img id="swimming" src="./assets/media/swim.jpg" alt="A picture of me swimming." loading="lazy"></img>
                         <figcaption>
                             I swam competitively on club and high school swim teams for seven years. Here is a less-than-elegant photo of me at a swim meet.
                         </figcaption>
                     </figure>
 
                     <figure id="boyscouts-about" class="about-fig">
-                        <img id="boyscouts" src="./assets/media/scuba.jpg" alt="A picture of me scuba diving."></img>
+                        <img id="boyscouts" src="./assets/media/scuba.jpg" alt="A picture of me scuba diving." loading="lazy"></img>
                         <figcaption>
                             In Boy Scouts, I attained the rank of Eagle Scout and the Triple Crown. This is Triple Crown Filler #1. Above is stinging jellyfish.
                         </figcaption>
                     </figure>
 
                     <figure id="trumpet-about" class="about-fig">
-                        <img id="trumpet" src="./assets/media/carnegie-suit.JPG" alt="A picture of me about to perform in Carnegie Hall."></img>
+                        <img id="trumpet" src="./assets/media/carnegie-suit.JPG" alt="A picture of me about to perform in Carnegie Hall." loading="lazy"></img>
                         <figcaption>
                             I have played trumpet for the All Northern California Honor Band, County Honor Band, and my school's Wind Ensemble.
                         </figcaption>
@@ -114,14 +159,14 @@
                     </figure>
 
                     <figure id="crown-filler2" class="about-fig">
-                        <img id="northern-tier" src="./assets/media/regret.JPG" alt="A picture of me carrying supplies as we walk our canoes through shallow water."></img>
+                        <img id="northern-tier" src="./assets/media/regret.JPG" alt="A picture of me carrying supplies as we walk our canoes through shallow water." loading="lazy"></img>
                         <figcaption>
                             Triple Crown Filler #2 - here my socks are wet.
                         </figcaption>
                     </figure>
 
                     <figure id="crown-filler3" class="about-fig">
-                        <img id="" src="./assets/media/coping.jpg" alt="A picture of us scared."></img>
+                        <img id="" src="./assets/media/coping.jpg" alt="A picture of us scared." loading="lazy"></img>
                         <figcaption>
                             Triple Crown Filler #3 - here mosquitoes are finding their way through our nets.
                         </figcaption>
@@ -129,7 +174,7 @@
 
 
                     <figure id="mexico-about" class="about-fig">
-                        <img id="mexico-volunteer" src="./assets/media/mexico-volunteer.jpg" alt="A picture of my group, helping build homes in Mexico."></img>
+                        <img id="mexico-volunteer" src="./assets/media/mexico-volunteer.jpg" alt="A picture of my group, helping build homes in Mexico." loading="lazy"></img>
                         <figcaption>
                             Here I volunteered to help build homes in Mexico. The locals were very kind, and their food delicious.
                         </figcaption>
@@ -173,10 +218,7 @@
         <details>
             <summary>For more:</summary>
             <ol>
-                <li class="Contact Me"><a href="mailto:dquang@ucsd.edu">Contact Me:</a> Quick links to contact me.</li>
-                <a id="linkedin-link" href="https://www.linkedin.com/in/danny-quang-009b82194/" target="_blank" rel="noopener noreferrer">
-                    <img id="linkedin-opening" alt="linkedin-logo" src="./files/LinkedIn-Logos/LI-In-Bug.png">
-                </a>            
+                <li class="email"><a href="mailto:dquang@ucsd.edu">dquang@ucsd.edu: </a>In case the Gmail button didn't load.</li>        
             </ol>
         </details>
 

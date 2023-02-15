@@ -1,0 +1,124 @@
+@media screen and (max-width: 640px) {
+    :root {
+        --default-color: rgb(57, 65, 120);
+        --default-background: rgb(251, 249, 249);
+    }
+    
+    
+    * {
+        text-align: center;
+        -border: 3px solid black;
+        -box-sizing: content-box;
+        -font-family: san 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
+    
+        font-size: medium;
+    }
+    
+    
+    h1, h2 {
+        font-size: 3em;
+        text-align: center;
+        color: var(--default-color);
+    }
+    
+    
+    body {
+        -background-image: url('../../files/signature/dq-signature.png');
+        background-color: var(--default-background);
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    header, section, form, footer {
+        background-color: white;
+    }
+
+
+
+
+
+
+
+
+    #topNav {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: small;
+        background-color: #333333;
+        opacity: 0.9;
+        height: 2.8em;
+        z-index: 2;
+        position: sticky;
+        top: 0px;
+    }
+
+
+    #hamburger {
+      visibility: visible;
+      display: flex;
+      justify-content: flex-end;
+      filter: invert(.8);
+    }
+
+
+
+    #topNav a {
+        visibility: hidden;
+    }
+    
+
+    #opening {
+        text-align: center;
+        display: grid;
+        justify-content: center;    
+    }
+    
+    
+    #opening tbody, tr, td {
+        padding: 0;
+        margin: 0;
+        border-spacing: 0;
+    }
+    
+    
+    #opening #signature, #flower {
+        max-width: 50vw;
+    }
+    
+
+    #header-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1em;
+        text-align: center;
+    }
+
+    #contact-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1em;
+        text-align: center;
+    }
+    
+    #header-links img, #contact-links img {
+        height: 3em;
+    }
+
+
+    #header-links img:hover, #contact-links img:hover {
+        transform: scale(1.3);
+        transition: transform 0.2s;
+    }
+
+  
+    #About-Me img, #About-Me video {
+        max-height: 100vh;
+        max-width: 100vw;
+    }
+
+  }

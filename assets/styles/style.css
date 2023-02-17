@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 :root {
     --text-color: rgb(57, 65, 120);
     --light-color: rgb(251, 249, 249);
@@ -11,8 +13,7 @@
     -border: 3px solid black;
     -box-sizing: content-box;
     -font-family: san 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: 'Times New Roman', Times, serif;
-
+    font-family: 'Playfair Display', serif;
     font-size: medium;
     scroll-behavior: smooth;
 }
@@ -22,6 +23,7 @@ h1, h2 {
     font-size: 3em;
     text-align: center;
     color: var(--text-color);
+    animation: linear;
 }
 
 
@@ -29,6 +31,7 @@ body {
     -background-image: url('../../files/signature/dq-signature.png');
     background-color: var(--light-color);
     margin: 0;
+    margin-top: 3em;
     overflow-x: hidden;
 }
 
@@ -37,44 +40,56 @@ header, section, form, footer {
     background-color: white;
 }
 
-#topNav {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: small;
-    background-color: var(--dark-color);
-    opacity: 0.9;
-    height: 2.8em;
-    z-index: 2;
-    position: sticky;
-    top: 0px;
+
+section {
+    min-height: 6cm;
 }
+
+
+
 
 #hamburger {
     visibility: hidden;
+    width: 0;
+}
+
+#topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #333333;
+    opacity: 0.9;
+    height: 3em;
+    z-index: 2;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 
-#topNav:hover {
-    opacity: 1;
-    transition: transform(0.2s);
-}
 
 
 #topNav a {
     color: rgb(209, 207, 207);
     text-decoration: none;
     width: 100%;
-    text-align: center;
-    font-size: small;
-    padding-top: 0.8em;   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    transition: all 0.2s ease-in;
+    height: 100%;
+
 }
 
 
 #topNav a:hover {
-    transform: scale(1.3);
-    transition: transform 0.2s;
-    color: var(--lighter-color);
+
+    color: red;
+    background-color: white;
 }
 
 
@@ -160,41 +175,84 @@ body {
 }
 
 
+
+
 #About-Me img, #About-Me video {
     height: 40vh;
+    width: auto;
 }
 
 
-.about-gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+.about-gallery figure {
     margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    overflow-x: scroll;
-}
-  
- .about-fig {
-    padding: .5rem;
-    background-color: #636363;
-    color: #d9d9d9;
 }
 
 
-  /* @media screen and (min-width: 800px) {
-    .education-gallery {
-      flex-wrap: wrap;
-      padding: 1rem 0;
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-      height: 60vh;
+
+@media (hover: none) {
+    .about-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        overflow-x: scroll;
     }
+    
+
+}
+
+
+
+@media (hover: hover) {
+
+    .about-gallery {
+        display: grid;
+        justify-content: start;
+    
+        grid-auto-flow: column;
+        width: 100%;
+        grid-template-columns: repeat(8, 30vh);
+        transition: ease-in-out .25s;
+        -transition: width 1s, height 1s;
+    }
+    
+    
+    .about-gallery figcaption {
+        color: black;
+        display: none;
+    }
+    
+    .about-gallery:hover {
+        grid-template-columns: repeat(8, auto);
+        align-items:first baseline;
+        background-color: #f0f0f0;
+        overflow-x: scroll;
+
+        grid-gap: 0px 10px;
+
+    
+    
+        /* display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        overflow-x: scroll; */
+    
+    }
+    
+    
+    .about-gallery:hover figcaption {
+        display: block;
+    }
+
+}
+
+
   
-    .education-fig {
-      scroll-snap-align: start;
-    }
-  } */
 
 
 #Contact-Me {
@@ -227,9 +285,16 @@ footer {
 
 
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1990px) {
+
+
+    body {
+        margin-top: 0;
+        margin-left: 5em;
+    }
     #hamburger {
     visibility: hidden;
+    height: 0;
 }
 
     #topNav {
@@ -243,30 +308,34 @@ footer {
 
         position: fixed;
         height: 100%;
+        width: 5em;
         top: 0;
         left: 0px;
     }
 
 
     #topNav:hover {
-        opacity: 1;
-        transition: transform(0.2s);
     }
     
     
     #topNav a {
         color: rgb(209, 207, 207);
         text-decoration: none;
-        width: 100%;
-        text-align: center;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: medium;
+        transition: all 0.2s ease-in;
+        height: 100%;
+
     }
     
     
     #topNav a:hover {
-        transform: scale(1.3);
-        transition: transform 0.2s;
-        color: #f6f4f4;
+        color: red;
+        background-color: white;
     }
 
     #header-links {
@@ -288,11 +357,11 @@ footer {
     #header-links img, #contact-links img {
         height: 3em;
     }
-  
-    #Education img, #Education video, #About-Me img, #About-Me video {
-        max-height: 100vh;
-        max-width: 100vw;
-    }
-
   }
+
+
+  #Contact-Me {
+}
+
+
 

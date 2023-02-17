@@ -28,6 +28,7 @@
         background-color: var(--default-background);
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
     
     
@@ -36,6 +37,9 @@
     }
 
 
+    section {
+        min-height: 5cm;
+    }
 
 
 
@@ -63,6 +67,10 @@
       filter: invert(.8);
     }
 
+
+    #topNav:hover {
+        background-color: black;
+    }
 
 
     #topNav a {
@@ -107,17 +115,83 @@
     
     #header-links img, #contact-links img {
         height: 3em;
+        border: 2px solid var(--default-color);
+        border-radius: 12px;
+        padding: 1em;
     }
 
 
-    #header-links img:hover, #contact-links img:hover {
-        transform: scale(1.3);
-        transition: transform 0.2s;
+
+
+
+
+
+
+
+
+    #Projects iframe {
+        max-width: 100vw;
+        height: 70vh;
     }
+    
+    
+    #Projects video {
+        max-height: 70vh;
+    }
+    
+    
+    .projects-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        overflow-x: scroll;
+    }
+    
+    .projects-fig {
+        padding: .7rem;
+        background-color: #636363;
+        color: #d9d9d9;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
   
     #About-Me img, #About-Me video {
-        max-height: 100vh;
+        max-height: 40vh;
+    }
+
+
+    .about-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        overflow-x: scroll;
+    }
+
+
+
+
+
+
+
+
+
+    #sleeping-seal {
         max-width: 100vw;
     }
 

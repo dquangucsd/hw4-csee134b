@@ -114,7 +114,7 @@
     }
     
     #header-links img, #contact-links img {
-        height: 3em;
+        height: 1em;
         border: 2px solid var(--default-color);
         border-radius: 12px;
         padding: 1em;

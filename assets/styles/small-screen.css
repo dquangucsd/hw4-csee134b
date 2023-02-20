@@ -1,7 +1,9 @@
 @media screen and (max-width: 640px) {
     :root {
-        --default-color: rgb(57, 65, 120);
-        --default-background: rgb(251, 249, 249);
+        --text-color: rgb(57, 65, 120);
+        --light-color: rgb(251, 249, 249);
+        --lighter-color: #f6f4f4;
+        --dark-color: #333333;
     }
     
     
@@ -19,13 +21,13 @@
     h1, h2 {
         font-size: 3em;
         text-align: center;
-        color: var(--default-color);
+        color: var(--text-color);
     }
     
     
     body {
         -background-image: url('../../files/signature/dq-signature.png');
-        background-color: var(--default-background);
+        background-color: var(--default-color);
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -76,33 +78,51 @@
     #topNav a {
         visibility: hidden;
     }
-    
 
     #opening {
-        text-align: center;
-        display: grid;
-        justify-content: center;    
-    }
-    
-    
-    #opening tbody, tr, td {
-        padding: 0;
-        margin: 0;
-        border-spacing: 0;
-    }
-    
-    
-    #opening #signature, #flower {
-        max-width: 50vw;
+        display: none;
     }
     
 
-    #header-links {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(1, 2vw);
+        gap: .5vh;
+        grid-auto-rows: 2vh;        
+        grid-template-areas:
+            "a"
+            "a"
+            "b"
+            "c"; */
+        background-image: "./assets/media/flower.jpeg";
+    }
+    
+    
+    
+    
+    
+    #wrapper #signature-wrapper, #flower-wrapper {
+        margin-top: 5vh;
+        max-width: 100vw;
+    }
+
+
+    #flower-wrapper {
+        border: 8px solid var(--lighter-color);
+        border-radius: 100%;
+    }
+    
+
+    #wrapper-links {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         gap: 1em;
         text-align: center;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 
     #contact-links {
@@ -111,17 +131,25 @@
         justify-content: space-evenly;
         gap: 1em;
         text-align: center;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     
-    #header-links img, #contact-links img {
-        height: 1em;
-        border: 2px solid var(--default-color);
+    #wrapper-links img, #contact-links img {
+        height: 12vw;
+        border: 2px solid var(--dark-color);
         border-radius: 12px;
-        padding: 1em;
+        padding: 2vw;
     }
 
 
 
+    #wrapper-links img:hover, #contact-links img:hover {
+        transform: scale(1.3);
+        transition: transform 0.2s;
+        background-color: var(--default-background);
+    }
 
 
 
@@ -176,9 +204,6 @@
     .about-gallery {
         display: flex;
         flex-wrap: nowrap;
-        align-items: center;
-        margin: 0;
-        padding: 0;
         background-color: #f0f0f0;
         overflow-x: scroll;
     }

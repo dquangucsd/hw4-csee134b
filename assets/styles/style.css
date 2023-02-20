@@ -106,6 +106,9 @@ section {
     border-spacing: 0;
 }
 
+#wrapper {
+    display: none;
+}
 
 #opening #signature, #flower {
     max-width: 50vw;
@@ -120,7 +123,7 @@ section {
 }
 
 #header-links img, #contact-links img {
-    height: 3rem;
+    height: 4vw;
 }
 
 
@@ -206,6 +209,12 @@ body {
         padding: 1em;
     }
     
+
+    #header-links img:hover, #contact-links img:hover {
+        transform: scale(1.3);
+        transition: transform 0.2s;
+        background-color: var(--dark-color);
+    }
 
 }
 
@@ -361,7 +370,8 @@ footer {
     }
     
     #header-links img, #contact-links img {
-        height: 3em;
+        height: 7vh;
+        padding: 3vh;
     }
   }
 

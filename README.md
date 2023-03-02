@@ -1,4 +1,3 @@
 # dq-portfolio
 A page showcasing my work.
-https://glowing-boba-883ccb.netlify.app/
-https://dquangucsd.github.io/dq-portfolio/
+https://wonderful-brioche-ba88d3.netlify.app/

@@ -16,6 +16,7 @@ function remove(title, date, summary) {
     //         return true;
     //     }
     // }
+    localStorage.removeItem(idLabel);
     return false;
 }
 
@@ -27,6 +28,7 @@ function add(title, date, summary) {
     let idLabel = "" + title + date + summary;
 
     p.setAttribute("id", idLabel);
+    p.setAttribute("class", "blog-entry");
     p.innerText = newHTML;
 
     blogs.appendChild(p);
@@ -50,6 +52,7 @@ function add(title, date, summary) {
     newEntry.date = date;
     newEntry.summary = summary;
     entries.push(newEntry);
+    localStorage.setItem(idLabel, newEntry);
     return true;
 }
 
@@ -69,3 +72,8 @@ addSubmit.addEventListener('click', () => {
 
 addCancel.addEventListener('click', () => {
 })
+
+
+add("Spirited Away", 2001, "Chihiro and her parents stumble upon an abandoned amusementt park. After gobbling down food meant for the spirits that live there, her parents are turned into pigs and Chihiro must find a way back home.");
+add("Initial D", 1998, "Takumi Fujiwara stumbles into the world of underground Touge racing. His ability to race is almost inherited.")
+

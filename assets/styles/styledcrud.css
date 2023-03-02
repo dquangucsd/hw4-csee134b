@@ -1,0 +1,21 @@
+* {
+
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10%;
+    background-color: darksalmon;
+}
+
+
+#add-button {
+    background-color: beige;
+    margin: 5em;
+}
+
+
+.blog-entry {
+    border: 2px red;
+}

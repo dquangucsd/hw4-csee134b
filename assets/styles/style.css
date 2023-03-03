@@ -187,9 +187,9 @@ table img {
 
 
 
-/* .about-gallery figure {
+.about-gallery figure {
     margin: 0;
-} */
+}
 
 
 
@@ -223,7 +223,7 @@ table img {
 
 @media screen and (hover: hover) {
 
-    .about-gallery {
+    /* .about-gallery {
         display: grid;
         justify-content: start;
     
@@ -232,13 +232,13 @@ table img {
         grid-template-columns: repeat(8, 30vh);
         transition: ease-in-out .25s;
         -transition: width 1s, height 1s;
-    }
+    } */
     
     
-    .about-gallery figcaption {
+    /* .about-gallery figcaption {
         color: black;
         display: none;
-    }
+    } */
     
     .about-gallery:hover {
         grid-template-columns: repeat(8, auto);

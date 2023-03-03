@@ -10,12 +10,27 @@ body {
 }
 
 
+#blogs {
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+
 #add-button {
     background-color: beige;
     margin: 5em;
 }
 
 
-.blog-entry {
-    border: 2px red;
+
+
+.blog-text {
+    border: 2px dotted black;
 }
+
+.blog-data {
+    border: 2px solid darkslategray;
+    padding: 2rem;
+}
+
+

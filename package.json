@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "dompurify": "^3.0.1"
   }
 }

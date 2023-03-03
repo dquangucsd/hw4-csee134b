@@ -14,14 +14,15 @@
 
 
     <!-- Required Core Glide Stylesheet -->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.css">
 
     <!-- Optional Theme Glide Stylesheet -->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.css">
 
 
     <!-- Mount a Glide -->
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script type="module" src="./assets/scripts/about.js"></script>
 
 
@@ -157,11 +158,12 @@
 
 
             <!-- <div class="about-gallery"> -->
+            <div class="container">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
 
-                            <li id="waterpolo-about" class="glide__slide">
+                            <figure id="waterpolo-about" class="about-fig">
                                 <img 
                                 id="waterpolo-shot"
                                 srcset = "./assets/media/waterpolo-lo.jpg 940w, ./assets/media/waterpolo-lo.jpg 1000w"
@@ -171,10 +173,12 @@
                                 alt="A picture of me playing waterpolo." 
                                 loading="lazy">
                                 </img>
-
-                            </li>
-
-                            <li id="swimming-about" class="glide__slide">
+                                <figcaption>
+                                    I learned how to tread and play Waterpolo for two years in high school, and sometimes I play in my university club team.
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="swimming-about" class="about-fig">
                                 <img 
                                 id="swimming"
                                 srcset = "./assets/media/swim-lo.jpg 940w, ./assets/media/swim.jpg 1000w"
@@ -184,9 +188,12 @@
                                 alt="A picture of me playing swimming." 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-                            <li id="boyscouts-about" class="glide__slide">
+                                <figcaption>
+                                    I swam competitively on club and high school swim teams for seven years. Here is a less-than-elegant photo of me at a swim meet.
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="boyscouts-about" class="about-fig">
                                 <img 
                                 id="boyscouts"
                                 srcset = "./assets/media/scuba-lo.jpg 940w, ./assets/media/scuba.jpg 1000w"
@@ -196,9 +203,14 @@
                                 alt="A picture of me playing scuba-diving." 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-                            <li id="trumpet-about" class="glide__slide">
+                                <figcaption>
+                                    In Boy Scouts, I attained the rank of Eagle Scout and the Triple Crown. 
+                                    <br>
+                                    This is Triple Crown Filler #1: Scuba-diving with stinging jellyfish.
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="trumpet-about" class="about-fig">
                                 <img 
                                 id="trumpet"
                                 srcset = "./assets/media/carnegie-suit-lo.jpg 940w, ./assets/media/carnegie-suit.JPG 1000w"
@@ -208,16 +220,24 @@
                                 alt="A picture of me about to perform in Carnegie Hall" 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-                            <li id="piano-about" class="glide__slide">
+                                <figcaption>
+                                    I have played trumpet for the All Northern California Honor Band, County Honor Band, and my school's Wind Ensemble. 
+                                    <br>
+                                    Here I'm about to play at Carnegie Hall!
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="piano-about" class="about-fig">
                                 <video controls>
                                     <source src="./assets/media/rick-roll-480.mov" type="video/mp4">
                                     Your browser doesn't support video tags :( or you blocked rick rolls >:(.
                                 </video>                        
-                            </li>
-
-                            <li id="crown-filler2" class="glide__slide">
+                                <figcaption>
+                                    I have played piano starting in elementary school, and taking Certificate of Merit (CM) tests starting in middle school.
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="crown-filler2" class="about-fig">
                                 <img 
                                 id="northern-tier"
                                 srcset = "./assets/media/regret-lo.jpg 940w, ./assets/media/regret.JPG 1000w"
@@ -227,9 +247,12 @@
                                 alt="A picture of me about to perform in Carnegie Hall" 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-                            <li id="crown-filler3" class="glide__slide">
+                                <figcaption>
+                                    Triple Crown Filler #2 - here my socks are wet.
+                                </figcaption>
+                            </figure>
+            
+                            <figure id="crown-filler3" class="about-fig">
                                 <img 
                                 id="coping"
                                 srcset = "./assets/media/coping-lo.jpg 940w, ./assets/media/coping.jpg 1000w"
@@ -239,10 +262,13 @@
                                 alt="A picture of us scared." 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-
-                            <li id="mexico-about" class="glide__slide">
+                                <figcaption>
+                                    Triple Crown Filler #3 - here mosquitoes are finding their way through our nets.
+                                </figcaption>
+                            </figure>
+            
+            
+                            <figure id="mexico-about" class="about-fig">
                                 <img 
                                 id="mexico-volunteer"
                                 srcset = "./assets/media/mexico-volunteer-lo.jpg 940w, ./assets/media/mexico-volunteer.jpg 1000w"
@@ -252,12 +278,18 @@
                                 alt="A picture of my group, helping build homes in Mexico." 
                                 loading="lazy">
                                 </img>
-                            </li>
-
-
-                            <li id="holi-about" class="glide__slide">
+                                <figcaption>
+                                    Here I volunteered to help build homes in Mexico. The locals were very kind, and their food delicious.
+                                </figcaption>
+                            </figure>
+            
+            
+                            <figure id="holi-about" class="about-fig">
                                 <img id="holi-festival" src="./assets/media/holi.JPG" alt="A picture of my friends at a Holi festival." loading="lazy"></img>
-                            </li>
+                                <figcaption>
+                                    I enjoy learning about new cultures. This is from a Holi festival!
+                                </figcaption>
+                            </figure>
                         </ul>
                     </div>
 
@@ -276,7 +308,7 @@
                         <button class="glide__bullet" data-glide-dir="=2"></button>
                       </div>
                 </div>
-
+            </div>
             <!-- </div> -->
 
 
@@ -305,6 +337,12 @@
  
         </section>
     </main>
+
+
+
+    <script>
+        new Glide(".glide").mount();
+    </script>
 </body>
 
 
